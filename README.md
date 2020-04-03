@@ -124,11 +124,10 @@ python3 aqi.py
 - <a href="https://io.adafruit.com/rbocchinfuso/dashboards/air-quality" target="_blank">adafruit.io</a>
 
 ## TODO
-- Demonize the app or call from cron (TBD).
+- Daemonize the app or call from cron? (TBD)
 - Migrate build from my prototype Raspberry Pi configuration to an older spare Raspberry Pi B+ board for permanent deployment.
 
 ## Contributing
-
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
