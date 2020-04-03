@@ -60,7 +60,7 @@
 > The two streaming services that I have configured are <a href="https://www.initialstate.com/" target="_blank">Initial State</a> and <a href="https://io.adafruit.com/" target="_blank">adafruit.io</a>.  There are many other options available, you will just need to make the necessary code modifications.
 
 #### Alerting
-> I like <a href="https://pushover.net/" target="_blank">Pushover</a> and this is the service I have configure in the code.  Again there are many other options available, you will just need to make the necessary code modifications.
+> I like <a href="https://pushover.net/" target="_blank">Pushover</a> and this is the service I have configured in the code.  Again there are many other options available, you will just need to make the necessary code modifications.
 
 ## Installation
 ### Get the code from GitHub
@@ -115,23 +115,17 @@ user_key = xxxxxxxxxxxxxxxxxxxxxxx
 ```
 python3 aqi.py
 ```
-#### AQI In Action
+#### AQI in action
 ![AQI Running](https://imgur.com/9PpWukl.gif)
 
-## Initial State Live Feed
 
-<div class="iframe_container">
-  <iframe src="https://iot.app.initialstate.com/embed/#/tiles/bkt_g5xpp7k8db9uvt"></iframe>
-</div>
-
-## adafruit.io Live Feed
-<div class="iframe_container">
-<iframe src="https://io.adafruit.com/rbocchinfuso/dashboards/air-quality"></iframe>
-</div>
+## Live feeds
+- <a href="https://go.init.st/79kh78w" target="_blank">Initial State</a>
+- <a href="https://io.adafruit.com/rbocchinfuso/dashboards/air-quality" target="_blank">adafruit.io</a>
 
 ## TODO
-- Code pretty clean, not much to do here.
-- Migrate from 
+- Demonize the app or call from cron (TBD).
+- Migrate build from my prototype Raspberry Pi configuration to an older spare Raspberry Pi B+ board for permanent deployment.
 
 ## Contributing
 
