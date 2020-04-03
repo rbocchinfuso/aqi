@@ -120,8 +120,13 @@ python3 aqi.py
 
 
 ## Live feeds
-- <a href="https://go.init.st/79kh78w" target="_blank">Initial State</a>
-- <a href="https://io.adafruit.com/rbocchinfuso/dashboards/air-quality" target="_blank">adafruit.io</a>
+#### Initial State Air Quality Index (AQI) Streaming Dashboard
+<a href="https://go.init.st/79kh78w" target="_blank">Click her to goto LIVE Initial State Air Quality Index (AQI) Streaming Dashboard</a>
+![Initial State Air Quality Index (AQI) Streaming Dashboard](https://i.imgur.com/kY1wbSn.png)
+
+#### adafruit.io Air Quality Index (AQI) Streaming Dashboard
+<a href="https://io.adafruit.com/rbocchinfuso/dashboards/air-quality" target="_blank">Click her to goto LIVE adafruit.io Air Quality Index (AQI) Streaming Dashboard</a>
+![adafruit.io Air Quality Index (AQI) Streaming Dashboard](https://i.imgur.com/Gfa0eqq.png)
 
 ## TODO
 - Daemonize the app or call from cron? (TBD)
