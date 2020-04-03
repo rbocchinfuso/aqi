@@ -12,7 +12,7 @@
 <table>
 <thead>
 	<tr>
-		<th>AQI</th>
+		<th>Air Quality Index (AQI)</th>
 		<th>PM : Human Hair Comparison</th>
 	</tr>
 </thead>
