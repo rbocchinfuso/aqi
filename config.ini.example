@@ -1,0 +1,25 @@
+[local]
+# serial device interface
+device = /dev/ttyUSB0
+# cycle time in seconds
+cycle_time = 10
+# service options = initialstate | adafruitio | both
+services = initialstate
+# mode options = dev | prod
+mode = dev
+
+[initialstate]
+is_bucket_name = xxxxxxxxxxxxxxxxxxxxxxx
+is_bucket_key = xxxxxxxxxxxxxxxxxxxxxxx
+is_access_key = xxxxxxxxxxxxxxxxxxxxxxx
+
+[adafruit_io]
+adafruitio_username = xxxxxxxxxxxxxxxxxxxxxxx
+adafruitio_key = xxxxxxxxxxxxxxxxxxxxxxx
+pmtwofive_feed = group.feed
+pmten_feed = group.feed
+
+[pushover]
+api_token = xxxxxxxxxxxxxxxxxxxxxxx
+user_key = xxxxxxxxxxxxxxxxxxxxxxx
+

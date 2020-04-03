@@ -1,0 +1,9 @@
+pyserial
+adafruit-io
+ISStreamer
+configparser
+python-pushover
+texttable
+tqdm
+colorama
+python-pushover

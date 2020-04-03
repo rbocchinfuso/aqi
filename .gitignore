@@ -1,0 +1,8 @@
+# ignore log files
+*.log
+# ignore ini files
+*.ini
+# ignore backup files
+*.bak*
+# ignore shell scripts
+*.sh
