@@ -23,3 +23,13 @@ pmten_feed = group.feed
 api_token = xxxxxxxxxxxxxxxxxxxxxxx
 user_key = xxxxxxxxxxxxxxxxxxxxxxx
 
+[mqtt]
+#broker ip or url: 
+broker = xxxxxxxxxxxxxxxxxxxxxxx
+port = xxxxxxxxxxxxxxxxxxxxxxx
+#define topics you want to send messages must be seperate for 2.5 and 10 pm 
+topic_pm10 = xxxxxxxxxxxxxxxxxxxxxxx
+topic_pm25 = xxxxxxxxxxxxxxxxxxxxxxx
+client_id = xxxxxxxxxxxxxxxxxxxxxxx
+username = xxxxxxxxxxxxxxxxxxxxxxx
+password = xxxxxxxxxxxxxxxxxxxxxxx
