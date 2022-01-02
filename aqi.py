@@ -20,17 +20,22 @@ from ISStreamer.Streamer import Streamer
 from Adafruit_IO import Client as adaClient
 from pushover import Client as poClient
 
+
 def alert(pmtwofive, pmten):
-    po = poClient(config['pushover']['user_key'], api_token=config['pushover']['api_token'])
+
     if (pmtwofive <= 12) and (pmten <= 54):
         print(Fore.GREEN + '--- Air quality levels are good. --- ' + Style.RESET_ALL)
     elif (pmtwofive > 12) or (pmten > 54):  
-        if (pmtwofive > 12):
-            print(Fore.RED + '!!! PM2.5 air quality reading above acceptable levels; triggering alert !!! ' + Style.RESET_ALL)
-            po.send_message("!!! PM2.5 AQI above acceptable level; check environment !!!", title="PM2.5 AQI Alert")
-        if (pmten > 54):
-            print(Fore.RED + '!!! PM10 air quality reading above acceptable levels; triggering alert !!! ' + Style.RESET_ALL)
-            po.send_message("!!! PM2.5 AQI above acceptable level; check environment !!!", title="PM10 AQI Alert")
+            if (pushovercheck !="xxxxxxxxxxxxxxxxxxxxxxx"):
+                po = poClient(config['pushover']['user_key'], api_token=config['pushover']['api_token'])
+            if (pmtwofive > 12):
+                print(Fore.RED + '!!! PM2.5 air quality reading above acceptable levels; triggering alert !!! ' + Style.RESET_ALL)
+                if (pushovercheck !="xxxxxxxxxxxxxxxxxxxxxxx"):
+                    po.send_message("!!! PM2.5 AQI above acceptable level; check environment !!!", title="PM2.5 AQI Alert")
+            if (pmten > 54):
+                print(Fore.RED + '!!! PM10 air quality reading above acceptable levels; triggering alert !!! ' + Style.RESET_ALL)
+                if (pushovercheck !="xxxxxxxxxxxxxxxxxxxxxxx"):
+                    po.send_message("!!! PM2.5 AQI above acceptable level; check environment !!!", title="PM10 AQI Alert")
     else:
         print(Fore.RED + '!!! Unknown AQI reading; triggering alert !!! ' + Style.RESET_ALL)
         po.send_message("!!! Unknown AQI reading; check monitor !!!", title="AQI Unknown Alert")
@@ -90,7 +95,9 @@ if __name__ == '__main__':
     aio = adaClient(config['adafruit_io']['adafruitio_username'], config['adafruit_io']['adafruitio_key'])
     # set port for air quality monitor
     ser = serial.Serial(config['local']['device'])
+    # set pushover availability check
+    pushovercheck =  config['pushover']['api_token']
     # set cycle time
     cycle_time = int(config['local']['cycle_time'])    
+    
     main()
-
